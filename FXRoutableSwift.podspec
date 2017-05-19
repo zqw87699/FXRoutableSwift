@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name         = "FXRoutableSwift"
-  s.version      = "1.0.0"
+  s.version      = "1.0.1"
   s.summary      = "FX路由框架"
 
   s.homepage     = "https://github.com/zqw87699/FXRoutableSwift"

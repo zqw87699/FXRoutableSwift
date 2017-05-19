@@ -257,12 +257,12 @@ open class FXRoutable: NSObject {
             if webVCClazz!.canOpenURL(url) {
                 print("\(String(describing: webVCClazz))可以打开链接:\(url)")
                 var mutableExtraParams = Dictionary<String,Any>.init()
-                if (option.defaultParams?.count)! > 0 {
+                if option.defaultParams != nil && (option.defaultParams?.count)! > 0 {
                     for param in (option.defaultParams?.keys)! {
                         mutableExtraParams[param] = option.defaultParams?[param]
                     }
                 }
-                if (extraParams?.count)! > 0 {
+                if extraParams != nil && (extraParams?.count)! > 0 {
                     for param in (extraParams?.keys)! {
                         mutableExtraParams[param] = extraParams?[param]
                     }
